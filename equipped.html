@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="omnitrix1.png" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .exit-animation {
+            transform: scale(0.92); /* Slight shrink */
+            opacity: 0;
+            filter: blur(7px); /* Soft blur effect */
+        }
+    </style>
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+    <div class="text-center text-white">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">OMNITRIX EQUIPPED!</h1>
+        <h2 class="text-3xl md:text-5xl font-bold mb-8">READY HERO?</h2>
+        <p class="text-lg md:text-2xl">TAP TO GO TO NEXT!</p>
+    </div>
+    <script>
+        document.addEventListener("click", function() {
+            document.body.classList.add("exit-animation"); // Add animation class
+            setTimeout(() => {
+                window.location.href = "valentine.html"; // Navigate after animation
+            }, 600); // Wait for the effect to complete
+        });
+    </script>
+</body>
+</body>
+</html>
